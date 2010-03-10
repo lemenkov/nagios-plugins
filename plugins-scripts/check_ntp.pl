@@ -313,7 +313,6 @@ if ($have_ntpq) {
 				}
 			} else {
 				print "No match!\n" if $verbose;
-				$jitter = '(not parsed)';
 			}
 			
 		}
