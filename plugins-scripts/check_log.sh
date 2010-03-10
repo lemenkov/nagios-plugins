@@ -62,8 +62,8 @@
 
 ECHO="/bin/echo"
 GREP="/bin/egrep"
-DIFF="/bin/diff"
-TAIL="/bin/tail"
+DIFF="/usr/bin/diff"
+TAIL="/usr/bin/tail"
 CAT="/bin/cat"
 RM="/bin/rm"
 CHMOD="/bin/chmod"
