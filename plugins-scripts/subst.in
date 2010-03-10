@@ -52,11 +52,11 @@ BEGIN {
 # returned from the which subroutine. run before changes to INC to add libexecdir
 # FIXME: Prepend executables with a substitution keyword instead.
 #
-/^[^#]/ && /(\/.*)?\/(bin|sbin|lib|libexec)\// {
-	match($0,/(\/.*)?\/(bin|sbin|lib|libexec)\/[-_a-zA-Z0-9]+/);
-	c=substr($0,RSTART,RLENGTH);
-	sub(c,which(c,path));
-}
+#/^[^#]/ && /(\/.*)?\/(bin|sbin|lib|libexec)\// {
+#	match($0,/(\/.*)?\/(bin|sbin|lib|libexec)\/[-_a-zA-Z0-9]+/);
+#	c=substr($0,RSTART,RLENGTH);
+#	sub(c,which(c,path));
+#}
 
 # add to libexecdir to INC for perl utils.pm
 /^use/ { if (/lib/) { if (/utils.pm|"."/ ) {sub(/utils.pm|"."/,led() )} } }
